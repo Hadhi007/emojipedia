@@ -1,16 +1,47 @@
 .square-box {
-    margin: 50px;
-    padding: 50px;
+    margin: 20px;
+    padding: 30px;
     background-color: #FFFFFF;
     color: black;
-    /* overflow: hidden; */
-    width: 20%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px; /* Flexible basis with minimum width */
+    min-height: 250px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.square-box  dl {
+.square-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.square-box h2 {
+    font-size: 3rem;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.square-box dl {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* overflow: auto; */
+    flex-grow: 1;
+}
+
+.square-box dt {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.square-box dd {
+    margin: 0;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 0.95rem;
 }
