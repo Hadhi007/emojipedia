@@ -1,0 +1,16 @@
+.square-box {
+    margin: 50px;
+    padding: 50px;
+    background-color: #FFFFFF;
+    color: black;
+    /* overflow: hidden; */
+    width: 20%;
+}
+
+.square-box  dl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* overflow: auto; */
+}
